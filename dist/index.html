@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>SmartNinja project</title>
+
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+  <script src="../bower_components/angular/angular.js"></script>
+
+  <script src="js/all.js"></script>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body ng-app="app">
+  <div>
+    <div class="well">
+      <div class="container">
+        <h3>Direktive</h3>
+		<div class="well container">
+          <h4>Newsletter</h4>
+          <email-form></email-form>
+        </div>
+        <div class="well container">
+          <h4>Številke</h4>
+          <input ng-model="text" type="text" class="form-control" />
+          <numbers data="text"></numbers>
+        </div>
+        <div class="well container">
+          <h4>GetMonth()</h4>
+          <input ng-model="month" type="text" class="form-control" />
+          <get-month data="month"></get-month>
+		</div>
+      </div>
+    </div>
+</body>
+</html>
